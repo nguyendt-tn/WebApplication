@@ -18,7 +18,7 @@
     <div class=" bottom-product">
         @foreach (var item in Model)
         {
-            <div class="col-md-4 bottom-cd simpleCart_shelfItem" style="padding-bottom:15px">
+            <div class="col-md-4 bottom-cd simpleCart_shelfItem" style="width:30%;padding-bottom: 15px; box-shadow: 0 1.5px 3px #777; border-radius: 5px; margin: 10px; ">
                 <div class="product-at ">
                     <a href="@Url.RouteUrl("XemChiTiet",new {@id=item.MaSP, @tensp = item.TenSP })">
                         <img class="img-responsive" src="@Url.Content("~/Content/HinhAnhSP/"+item.HinhAnh)" alt="" style="width:255px;height:250px;">
@@ -33,7 +33,6 @@
                 @*gửi về đường dẫn hiện tại *@
             </div>
         }
-        <div class="clearfix"> </div>
     </div>
     <div class="dlink">
         Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount

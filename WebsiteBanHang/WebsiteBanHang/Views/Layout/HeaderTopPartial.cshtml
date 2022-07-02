@@ -1,42 +1,44 @@
 ﻿@using WebsiteBanHang.Models
 
-<div class="header-top">
+<div class="header-top" style="background: #4a90e2;">
     <div class="container">
         @* Tạo form submit về action tìm kiếm *@
         @using (Html.BeginForm("LayTuKhoaTimKiem", "TimKiem"))
         {
-        <div class="search">
-            <form>
-                <input type="text" style="color:black" name="sTuKhoa" value="Search " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-                <input type="submit" value="Tìm kiếm"> 
-            </form>
-        </div>
+            <div class="search" style="border-radius:20px;">
+                <form>
+                    <input type="text" style="color: #999;font-weight:500;width:85%;" name="sTuKhoa" value="What you search... " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                    <button style="background: #ffffff; border-radius: 20px; border: none;" type="submit" value="Tìm kiếm">
+                        <img src="~/Content/images/loupe.png" style="width:20px" alt="" />
+                    </button>
+                </form>
+            </div>
         }
-        
+
         <div class="header-left">
             <ul>
-                <li style="display: inline; color: black; font-size: 17px; margin-right: 15px;"> <b>Giới thiệu</b></li>
-                <li style="display: inline; "><a style="color: black; font-size: 17px; margin-right: 15px;" href="@Url.Action("Index", "ThongKe")"><b>Quản lý</b></a>  </li>
+                <li style="display: inline; color: white; font-size: 17px; margin-right: 15px;"> <b>Giới thiệu</b></li>
+                <li style="display: inline; "><a style="color: white; font-size: 17px; margin-right: 15px;" href="@Url.Action("Index", "ThongKe")"><b>Quản lý</b></a>  </li>
                 @if (Session["TaiKhoan"] != null && Session["TaiKhoan"].ToString() != "")
                 {
                     ThanhVien tv = (ThanhVien)Session["TaiKhoan"];     //ép kiểu từ biến session thành biến tv để lấy ra thông tin
-                    <li style="display:inline; color:black; font-size:17px; margin-right:15px;"><b>Chào</b> @tv.HoTen </li>
-                    <li><a style="color: black; font-size: 17px; margin-right: 15px;" href="@Url.Action("DangXuat", "Home")"><b>Đăng xuất</b></a>  </li>
+                    <li style="display: inline; color: white; font-size: 17px; margin-right: 15px;"><b>Chào</b> @tv.HoTen </li>
+                    <li><a style="color: white; font-size: 17px; margin-right: 15px;" href="@Url.Action("DangXuat", "Home")"><b>Đăng xuất</b></a>  </li>
                     @*@Html.ActionLink("Đăng xuất", "DangXuat", "Home", new { @class = "lock" })*@
                 }
                 else
                 {
-                    <li style="display:inline;"><a id="btnDangNhap" style="color: black; font-size: 17px; margin-right: 15px;" href="#"><b>Đăng nhập</b></a></li>
-                    <li style="display:inline;"><a style="color: black; font-size: 17px; margin-right: 15px;" href="@Url.Action("DangKy", "Home")"><b>Đăng ký</b></a></li>
+                    <li style="display:inline;"><a id="btnDangNhap" style="color: white; font-size: 17px; margin-right: 15px;" href="#"><b>Đăng nhập</b></a></li>
+                    <li style="display:inline;"><a style="color: white; font-size: 17px; margin-right: 15px;" href="@Url.Action("DangKy", "Home")"><b>Đăng ký</b></a></li>
                 }
-
+                <li style="display:inline;"><a href="@Url.Action("XemGioHang","GioHang")" class="simpleCart_empty" style="color: white"><b>Giỏ hàng</b></a></li>
 
             </ul>
             <!--chèn partial view giỏ hàng vào layout (tách icon giỏ hàng sang 1 partial view mới)-->
-            @Html.Action("GioHangPartial","GioHang")
-            <div class="clearfix"> </div>
+            @Html.Action("GioHangPartial", "GioHang")
+            
         </div>
-        <div class="clearfix"> </div>
+      
     </div>
 </div>
 
@@ -48,23 +50,23 @@
 <div>
     <br />
     <div id="popup_login">
-        <div class="login-form" id="login-form">
+        <div class="login-form" style="width:30%;background: #fff; box-shadow: 0 2px 5px #777;" id="login-form">
             <div style="clear:both;text-align:right;margin-bottom:0">
-                <span id="close-form" class="btn btn-danger">X</span>
+                <span style="color:#fff" id="close-form" class="btn btn-danger">X</span>
             </div>
-            <h2>Đăng nhập</h2>
+            <h2 style="color:#333">Đăng nhập</h2>
             <div class="form-info">
                 <!--Dùng ajax để hiển thị thông báo khi đăng nhập-->
-                @using(Ajax.BeginForm("DangNhap","Home",new AjaxOptions {HttpMethod= "POST", InsertionMode = InsertionMode.Replace,UpdateTargetId= "ThongBao" }))
+                @using (Ajax.BeginForm("DangNhap", "Home", new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "ThongBao" }))
                 {
 
-                    <input type="text" class="email" name="txtTenDangNhap" placeholder="Tên đăng nhập" required="" />
-                    <input type="password" class="password" name="txtMatKhau" placeholder="Mật khẩu" required="" />
+                    <input style="border: 1px solid #ccc;" type="text" class="email" name="txtTenDangNhap" placeholder="Tên đăng nhập" required="" />
+                    <input style="border: 1px solid #ccc;" type="password" class="password" name="txtMatKhau" placeholder="Mật khẩu" required="" />
                     <p><a href="#">Quên mật khẩu?</a></p>
-                    <h3 id="ThongBao" style="font-weight:bold; color:crimson; text-align:left" ></h3>
+                    <h3 id="ThongBao" style="font-weight:bold; color:crimson; text-align:left"></h3>
                     <ul class="login-buttons">
-                        <li><input type="submit" class="btn-summit" value="Đăng nhập" style="height: 51px; width: 199px;" /></li>
-                        <li><a href="#" class="btn-summit hvr-sweep-to-left" style="min-width: 150px; height: 47px; font-size: 16px; text-decoration:none">đăng ký</a></li>
+                        <li><input type="submit" class="btn-summit" value="Đăng nhập" style="background: #516BEB; height: 50px; width: 180px; " /></li>
+                        <li><a href="#" class="btn-summit hvr-sweep-to-left" style="background: #B980F0; min-width: 180px; height: 50px; font-size: 16px; text-decoration: none ">Đăng ký</a></li>
                     </ul>
                 }
             </div>
@@ -73,20 +75,23 @@
 </div>
 
 <style>
-    .lockl{
-        color:black;
+    .lockl {
+        color: black;
     }
+
     .clearfix {
         background-color: #f8f8ff;
     }
-   
+
     .header-top {
-        background-color: #008080;
+        border-bottom: 0 solid #ededed;
+        background: #f4f4f4;
     }
-   
+
     #close-form {
         color: #6495ed;
     }
+
     #popup_login {
         position: fixed;
         top: 0;
@@ -98,6 +103,7 @@
         display: none;
         text-align: center;
     }
+
     .btn-summit:hover {
         background: #6495ed;
         color: #fff;

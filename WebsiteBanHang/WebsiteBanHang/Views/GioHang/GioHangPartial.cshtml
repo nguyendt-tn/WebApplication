@@ -1,14 +1,14 @@
 ﻿@* Dùng viewbag thay vì model để thể hiện tổng số lg sản phẩm có trong giỏ hàng và tổng tiền *@
-<div class="cart box_1">
+<div class="cart box_1" style="margin-top:5px;">
     <a href="@Url.Action("XemGioHang","GioHang")">
         <h3>
-            <div class="total" style="color:black">
+            <div class="total" style="color: white">
                 <!--Hiển thị tổng tiền và số lượng-->
-                @ViewBag.TongTien.ToString("#,##")<b>VND</b> (<span> @ViewBag.TongSoLuong</span> sp)
+                @ViewBag.TongTien.ToString("#,##")<b>VND</b>
             </div>
-            <img src="~/Content/images/cart.png" alt="" />
+            <span style="top: 15px; right: 185px; background-color: #ff5b5b; position: absolute; border-radius: 20px; color: white;"> @ViewBag.TongSoLuong</span>
+            <img src="~/Content/images/cart.png" style="width:20px" alt="" />
         </h3>
     </a>
-    <p><a href="@Url.Action("XemGioHang","GioHang")" class="simpleCart_empty" style="color:black"><b>Giỏ hàng</b></a></p>
 
 </div>

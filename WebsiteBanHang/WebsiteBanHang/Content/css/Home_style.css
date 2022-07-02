@@ -5,7 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 body {
-    background: #90ee90;
+    background: #ffffff;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -159,7 +159,7 @@ a.item_add {
             }
 
                 .header-left ul li a:hover {
-                    color: #EF5F21;
+                    color: #2f80ed;
                 }
 
 .logo {
@@ -322,13 +322,13 @@ ul.callbacks_tabs.callbacks1_tabs {
         text-decoration: none;
         color: #fff;
         font-size: 1.2em;
-        background: #EF5F21;
+        background: #2f80ed;
         padding: 0.4em 1em;
         border-radius: 5px;
     }
 
         .banner-text a:hover {
-            color: #EF5F21;
+            color: #2f80ed;
             background: #fff;
         }
 /*--content-top--*/
@@ -362,7 +362,7 @@ ul.callbacks_tabs.callbacks1_tabs {
     }
 
         .grid-top p a:hover {
-            color: #EF5F21;
+            color: #2f80ed;
         }
 
 .grid-in {
@@ -576,7 +576,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 /*--//content--*/
 /*--footer--*/
 .footer {
-    background: #141414;
+    background: #16003B;
 }
 
 .amet-sed h4 {
@@ -605,7 +605,7 @@ ul.nav-bottom li {
     }
 
         ul.nav-bottom li a:hover {
-            color: #EF5F21;
+            color: #2f80ed;
         }
 
 .amet-sed p {
@@ -620,7 +620,7 @@ ul.nav-bottom li {
 }
 
     .footer-class p a {
-        color: #EF5F21;
+        color: #2f80ed;
         text-decoration: none;
     }
 
@@ -631,7 +631,7 @@ ul.nav-bottom li {
 .footer-class {
     padding: 1.5em 0;
     text-align: center;
-    background: #000;
+    background: #16003B;
 }
 
 .amet-sed form {
@@ -652,7 +652,7 @@ ul.nav-bottom li {
     width: 20%;
     color: #FFF;
     font-size: 1em;
-    background: #EF5F21;
+    background: #2f80ed;
     border: none;
     outline: none;
     padding: 0.5em;
@@ -660,7 +660,7 @@ ul.nav-bottom li {
 
     .amet-sed input[type="submit"]:hover {
         background: #fff;
-        color: #EF5F21;
+        color: #2f80ed;
     }
 
 ul.social {
@@ -744,7 +744,7 @@ ul.social {
 .send input[type="submit"] {
     width: 14%;
     font-size: 1.1em;
-    background: #EF5F21;
+    background: #2f80ed;
     padding: 0.4em 0.8em;
     text-align: center;
     color: #fff;
@@ -786,7 +786,7 @@ ul.social {
 }
 
     .address-more p a:hover {
-        color: #EF5F21;
+        color: #2f80ed;
     }
 /*--//contact--*/
 /*--blog--*/
@@ -825,7 +825,7 @@ ul.social {
 
             .blog-poast-info ul li a:hover {
                 text-decoration: none;
-                color: #EF5F21;
+                color: #2f80ed;
             }
 
         .blog-poast-info ul li i {
@@ -867,7 +867,7 @@ ul.social {
     }
 
         .grid_3 h3 a:hover {
-            color: #EF5F21;
+            color: #2f80ed;
         }
 
 .button {
@@ -878,7 +878,7 @@ ul.social {
         color: #fff;
         font-size: 1em;
         text-transform: uppercase;
-        background: #EF5F21;
+        background: #2f80ed;
         padding: 0.4em 1em;
         text-decoration: none;
         text-decoration: none;
@@ -935,8 +935,8 @@ p.m_11 {
 
     .tags li a:hover {
         color: #fff;
-        background: #EF5F21;
-        border: 1px solid #EF5F21;
+        background: #2f80ed;
+        border: 1px solid #2f80ed;
     }
 
 .tags ul li:nth-child(4), .tags ul li:nth-child(8), .tags ul li:nth-child(12) {
@@ -958,9 +958,15 @@ h3.cate {
 .product-go {
     margin-top: 2em;
 }
-
+.product-image{
+    border: none !important;
+}
 .product {
     padding: 4em 0;
+    box-shadow: 0 1.5px 3px #777;
+    border-radius: 5px;
+    margin: 20px;
+}
 }
 
 .bottom-product {
@@ -973,8 +979,8 @@ nav.in {
 
 .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
     color: #fff;
-    background-color: #EF5F21;
-    border-color: #EF5F21;
+    background-color: #2f80ed;
+    border-color: #2f80ed;
 }
 
 .pagination > li > a, .pagination > li > span {
@@ -1004,7 +1010,7 @@ ul.kid-menu {
     }
 
         .menu > li > a:hover {
-            color: #EF5F21;
+            color: #2f80ed;
         }
 
     .menu ul li a {
@@ -1019,7 +1025,7 @@ ul.kid-menu {
     }
 
         .menu ul li a:hover {
-            color: #EF5F21;
+            color: #2f80ed;
         }
 
     ul.kid-menu li, .menu ul li {
@@ -1043,8 +1049,8 @@ h3.best {
 }
 
 .pagination > .active > a, .pagination > .active > a:hover {
-    background: #EF5F21;
-    border-color: #EF5F21;
+    background: #2f80ed;
+    border-color: #2f80ed;
 }
 /*----*/
 .product-middle {
@@ -1078,8 +1084,8 @@ a.shop-now {
 }
 
     a.shop-now:hover {
-        border: 1px solid #EF5F21;
-        background: #EF5F21;
+        border: 1px solid #2f80ed;
+        background: #2f80ed;
     }
 
 h3.tag {
@@ -1117,14 +1123,14 @@ h6.best2 {
     }
 
         h6.best2 a:hover {
-            color: #EF5F21;
+            color: #2f80ed;
         }
 
 span.price-in1 {
     font-size: 1.7em;
     padding: 0.3em 0 0;
     display: block;
-    color: #EF5F21;
+    color: #2f80ed;
 }
 
     span.price-in1 small {
@@ -1143,19 +1149,19 @@ span.price-in1 {
 
     .six1 h4 {
         font-size: 2.5em;
-        color: #EF5F21;
+        color: #2f80ed;
         font-weight: 100;
     }
 
     .six1 p {
         font-size: 2em;
-        color: #EF5F21;
+        color: #2f80ed;
         margin: 0.5em 0 0;
     }
 
     .six1 span {
         font-size: 6em;
-        color: #EF5F21;
+        color: #2f80ed;
         font-weight: 100;
         font-family: 'Lato', sans-serif;
     }
@@ -1170,7 +1176,7 @@ a.item_add p.number {
     font-size: 1.1em;
     color: #FFF;
     text-align: center;
-    background: #EF5F21;
+    background: #2f80ed;
     padding: 0.5em 1em;
 }
 
@@ -1227,14 +1233,14 @@ p.tun {
         color: #fff;
         font-size: 1.1em;
         font-weight: 600;
-        background: #EF5F21;
+        background: #2f80ed;
         padding: 0.5em 1.5em;
         text-transform: uppercase;
     }
 
         .pro-grid span:hover {
             background: #fff;
-            color: #EF5F21;
+            color: #2f80ed;
         }
 /*--//product--*/
 /*--single--*/
@@ -1264,7 +1270,7 @@ ul.star-footer li {
 }
 
 .single-para h5 {
-    color: #EF5F21;
+    color: #2f80ed;
     font-size: 2em;
     border-bottom: 1px solid #C4C3C3;
     padding: 0.3em 0;
@@ -1320,7 +1326,7 @@ ul.tag-men {
 a.add-cart {
     text-decoration: none;
     color: #fff;
-    background: #EF5F21;
+    background: #2f80ed;
     padding: 0.4em 0.8em;
     font-size: 0.9em;
     text-transform: uppercase;
@@ -1364,7 +1370,7 @@ h3.real {
 }
 
     .star-on a:hover {
-        color: #EF5F21;
+        color: #2f80ed;
     }
 /*----*/
 .cd-tabs-navigation {
@@ -1391,7 +1397,7 @@ h3.real {
     }
 
         .cd-tabs-navigation a.selected {
-            background: #EF5F21;
+            background: #2f80ed;
             color: #fff;
         }
 
@@ -1475,7 +1481,7 @@ h3.real {
 a.add-re {
     text-decoration: none;
     color: #fff;
-    background: #EF5F21;
+    background: #2f80ed;
     padding: 0.4em 0.8em;
     font-size: 0.9em;
     text-transform: uppercase;
@@ -1545,7 +1551,7 @@ a.add-re {
 }
 
 .news-letter {
-    color: #EF5F21;
+    color: #2f80ed;
     font-size: 1em;
     margin-bottom: 1em;
     display: inline-block;
@@ -1565,7 +1571,7 @@ a.add-re {
     width: 20px;
     height: 20px;
     outline: none;
-    border: 2px solid #EF5F21;
+    border: 2px solid #2f80ed;
 }
 
 .checkbox input + i:after {
@@ -1603,7 +1609,7 @@ a.add-re {
 }
 
 .register-bottom-grid input[type="submit"] {
-    background: #EF5F21;
+    background: #2f80ed;
     padding: 0.4em 1em;
     color: #fff;
     font-size: 1.2em;
@@ -1661,7 +1667,7 @@ a.add-re {
     padding: 7px 20px;
     color: #FFF;
     cursor: pointer;
-    background: #EF5F21;
+    background: #2f80ed;
     border: none;
     width: 20%;
     margin: 1em auto 0;
@@ -1684,7 +1690,7 @@ a.add-re {
 .five {
     background: #fff;
     border-radius: 100px;
-    border: 2px solid #EF5F21;
+    border: 2px solid #2f80ed;
     width: 100px;
     height: 100px;
     position: absolute;
@@ -1696,7 +1702,7 @@ a.add-re {
 
     .five span {
         font-size: 1em;
-        color: #EF5F21;
+        color: #2f80ed;
     }
 
     .five h2 {
@@ -1709,7 +1715,7 @@ a.create {
     text-decoration: none;
     color: #fff;
     padding: 7px 20px;
-    background: #EF5F21;
+    background: #2f80ed;
     text-align: center;
     display: block;
 }
@@ -1746,7 +1752,7 @@ a.create {
     .single-bottom input[type="submit"] {
         width: 10%;
         font-size: 1.3em;
-        background: #EF5F21;
+        background: #2f80ed;
         padding: 0.4em 0.8em;
         text-align: center;
         color: #fff;
@@ -1861,7 +1867,7 @@ a.create {
 }
 
 a.order {
-    background: #EF5F21;
+    background: #2f80ed;
     padding: 10px 20px;
     font-family: 'Lato', sans-serif;
     font-size: 1em;
@@ -1897,7 +1903,7 @@ a.order {
     }
 
 a.cpns {
-    background: #EF5F21;
+    background: #2f80ed;
     color: #fff;
     font-family: 'Lato', sans-serif;
     padding: 10px;
@@ -1925,7 +1931,7 @@ a.cpns {
         }
 
 a.continue {
-    background: #EF5F21;
+    background: #2f80ed;
     padding: 10px 20px;
     font-family: 'Lato', sans-serif;
     font-size: 1em;
